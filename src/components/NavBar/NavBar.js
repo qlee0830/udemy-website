@@ -24,7 +24,7 @@ const NavBar = () => {
                     placeholder='Search for anything' />
             </div>
             <ul> {/* the rest of navigation items */}
-                {NavItems.map((item, index) => {
+                {NavItems_A.map((item, index) => {
                     return(
                         <li key={index}>
                             <a className={item.link} href={item.url}>
@@ -39,7 +39,7 @@ const NavBar = () => {
     )
 }
 
-const NavItems = [
+const NavItems_A = [
     {
         title: 'Udemy for Business',
         url: '#',
@@ -54,22 +54,7 @@ const NavItems = [
         title: 'My courses',
         url: '#',
         link: 'nav-link'
-    },
-    {
-        title: 'Wishlist',
-        url: '#',
-        link: 'nav-link'
-    },
-    {
-        title: 'Cart',
-        url: '#',
-        link: 'nav-link'
-    },
-    {
-        title: 'Noti',
-        url: '#',
-        link: 'nav-link'
-    },
+    }
 ]
 
 export default NavBar;
