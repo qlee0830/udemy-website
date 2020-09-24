@@ -3,22 +3,25 @@ import Cat from './Cat';
 import User from './User';
 
 import '../../styles/NavBar.scss';
+import logo from '../../assets/udemy-logo.svg';
 
 const NavBar = () => {
 
     return (
         <div className='nav-bar'>
             <div className='logo'> {/* Udemy logo */}
-                <h3>Logo</h3>
+                <a href='https://www.udemy.com/home/my-courses/learning/'>
+                    <img src={logo} alt='Logo' height='30px' width='100px' />
+                </a>
             </div>
             <Cat /> {/* Categories */}
-            <div className='search-box'> {/* search box */}
+            <div className='search-container'> {/* search box */}
+                <button type='submit'><i class="fas fa-search"></i></button>
                 <input
                     className='search-text'
                     type='text'
                     name=''
                     placeholder='Search for anything' />
-                <div></div>
             </div>
             <ul> {/* the rest of navigation items */}
                 {NavItems.map((item, index) => {
@@ -31,7 +34,7 @@ const NavBar = () => {
                     )
                 })}
             </ul>
-            <User />
+            <User /> {/* User profile */}
         </div>
     )
 }

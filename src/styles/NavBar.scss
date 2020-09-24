@@ -1,0 +1,63 @@
+$font-stack: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+body {
+    font-family: $font-stack;
+    font-size: medium;
+}
+
+.nav-bar {
+    display: flex;
+    font-size: small;
+    margin: 5px;
+
+    .logo {
+        display: left;
+        margin: 15px;
+        cursor: pointer;
+    }
+
+    .search-container {
+        margin: 10px 10px auto;
+        padding: 5px 5px;
+        font-family: 'Courier New', Courier, monospace;
+        border: 1px solid black;
+        border-radius: 30px;
+        width: 100%;
+        display: flex;
+        button {
+            border: none;
+            background: none;
+            float: left;
+            padding: 10px 10px;
+            cursor: pointer;
+            &:focus {
+                border: none;
+            }
+        }
+        input {
+            width: 100%;
+            border: none;
+            margin-right: 5px;
+            &:focus {
+                border: none;
+            }
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        width: 100%;
+        li {
+            margin: 10px 10px;
+            a {
+                list-style-type: none;
+                color: black;
+                text-decoration: none;
+                &:hover {
+                    color: rgb(125, 184, 240);
+                }
+            }
+        }
+    }
+}

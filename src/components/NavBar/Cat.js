@@ -5,8 +5,8 @@ import '../../styles/Cat.scss';
 const Cat = () => {
 
     return(
-        <div>
-            <p>Categories-Items</p>
+        <div className='cat'>
+            <p>Categories</p>
         </div>
     )
 }

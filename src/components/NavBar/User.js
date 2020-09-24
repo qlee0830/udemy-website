@@ -5,7 +5,7 @@ import '../../styles/User.scss';
 const User = (props) => {
 
     return (
-        <div>
+        <div className='user'>
             <p>User</p>
         </div>
     )
